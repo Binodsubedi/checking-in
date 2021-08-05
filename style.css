@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+::selection{
+    color: #8C7357;
+}
+body{
+
+    font-family: 'Dela Gothic One', cursive;
+    overflow-x: hidden;
+    height:100%;
+    width: 100%;
+    background-color:#313d47 ;
+}
+.main_container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.navigation{
+    position:relative;
+    margin-top:0;
+    display:fixed;
+    z-index:999;
+    border-bottom: 1em #435563 solid ;
+    height: 100px;
+}
+
+.logo{
+    z-index: 999;
+    position: absolute;
+    left: 3%;
+    background: url('https://www.freelogodesign.org/assets/img/logo-colors-meanings/logos-bleus/logo-fld03.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:150px;
+    width: 155px;
+    top: -32px;
+    
+
+}
+.visible{
+    position: absolute;
+    color: #6d93d1;
+    transition: 1s all ease-in-out;
+    opacity: 0;
+}
+.logo:hover + .visible{
+    opacity: 1;
+}
+.options{
+    position: absolute;
+    right: 3%;
+    margin-top: 15px;
+}
+.options button{
+    background-color: #1d4a6e;
+    border: hidden;
+    height: 46px;
+    width: 110px;
+    margin-right: 90px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #c1cee3;
+    transition: 0.1s all ease-in-out;
+}
+.options i{
+    font-size:20px ;
+    margin-right: 5px;
+}
+.btn:active{
+transform: scaleX(0.8);
+}
+.footer{
+    position:absolute;
+    z-index:999 ;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0;
+    background-color: #188D8C;
+}
+.footer h3{
+    position:absolute;
+    right: 5%;
+    margin-top:10px;
+}
+.container1{
+
+    height:100vmax;
+    width: 100vmax;
+    background-color: #188D8C;
+    position:relative;
+    display: block;
+    
+    
+}
+.Your_header{
+    color:#98DB7F;
+    width:300px;
+    z-index: 99;
+    display:flex;
+    justify-content: center;
+    white-space: nowrap;
+    position:absolute;
+    left:38%;
+    top:10%;
+    cursor: pointer;
+}
+
+@keyframes wiggle{
+    0% {left:38%}
+    435% {left:44%}
+    72% {left:34%}
+    100% {right:38%}
+    
+
+    
+}
+
+.Your_header:hover{
+    animation-name: wiggle;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 0.2s;
+
+
+}
+table{
+    
+    position: absolute;
+    margin-top: 40px;
+    border-spacing: 100px;
+    top:14%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #36c2b5;
+    width: 100%;
+    bottom:0;
+}
+.element.head1{
+
+height: 350px;
+width: 450px;
+background: url('https://analyticsindiamag.com/wp-content/uploads/2020/01/top-10-DS-projects.png');
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat;
+}
+.element.head2{
+    height: 350px;
+    width: 450px;
+    background: url('http://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2019/01/Python-Projects-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+
+}
+.element{
+    height: 350px;
+    width: 450px;
+    transition: 0.3s all ease-in;
+    border-radius: 10px;
+}
+.element.one{
+    background: url('https://blog.hubbado.com/content/images/2020/01/projectmanager.png');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.element.two{
+
+    background: url('https://miro.medium.com/max/3366/1*OknPNvHWZBEuzEzu9NMN9w.jpeg');
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+.element:hover{
+
+    transform: scale(1.2,1.1);
+}
+.container2{
+
+    height: calc(100vh + 200px);
+    width: 100vw;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:none;
+    position:relative;
+}
+.container1.disabled{
+    display: none;
+}
+.container2.enabled{
+    display:block;
+}
+.container2 h1{
+    font-size:54px;
+    position: absolute;
+    left:39%;
+    top: 10%;
+    color:#02e5f5 ;
+}
+.container2 .imageme{
+
+    position: absolute;
+    height: 500px;
+    width:500px;
+    background: url('111.jpg');
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    left:33%;
+    top: 25%;
+    border-radius: 10px;
+}
+.contento{
+    position:absolute;
+    height: 100px;
+    width: 500px;
+    border: 5px #0cf5b6 solid;
+    left:33%;
+    bottom: 8%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.number1{
+    
+    font-size: 25px;
+    color:#0ceef2;
+    
+}
